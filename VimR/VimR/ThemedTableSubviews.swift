@@ -65,8 +65,8 @@ class ThemedTableRow: NSTableRowView {
 class ThemedTableCell: NSTableCellView {
   // MARK: - API
 
-  static let font = NSFont.systemFont(ofSize: 12)
-  static let widthWithoutText = (2 + 16 + 4 + 2).cgf
+  static let font = NSFont(name: "SarasaMonoSCNerd-Nerd", size: 16) ?? NSFont.systemFont(ofSize: 16)
+  static let widthWithoutText = (2 + 20 + 4 + 2).cgf
 
 //  static func width(with text: String) -> CGFloat {
 //    let attrStr = NSAttributedString(string: text, attributes: [NSAttributedString.Key.font: ThemedTableCell.font])
@@ -115,8 +115,8 @@ class ThemedTableCell: NSTableCellView {
 
       imageView.autoPinEdge(toSuperviewEdge: .top, withInset: 2)
       imageView.autoPinEdge(toSuperviewEdge: .left, withInset: 2)
-      imageView.autoSetDimension(.width, toSize: 16)
-      imageView.autoSetDimension(.height, toSize: 16)
+      imageView.autoSetDimension(.width, toSize: 18)
+      imageView.autoSetDimension(.height, toSize: 18)
 
       textField.autoPinEdge(toSuperviewEdge: .top, withInset: 2)
       textField.autoPinEdge(toSuperviewEdge: .right, withInset: 2)

@@ -423,7 +423,7 @@ extension FileOutlineView {
     return cellView
   }
 
-  func outlineView(_: NSOutlineView, heightOfRowByItem _: Any) -> CGFloat { 20 }
+  func outlineView(_: NSOutlineView, heightOfRowByItem _: Any) -> CGFloat { 22 }
 
   func outlineView(_: NSOutlineView, shouldExpandItem item: Any) -> Bool {
     guard let node = self.node(from: item) else { return false }
@@ -525,4 +525,4 @@ private extension NSTreeNode {
 }
 
 private let columnWidthRightPadding = 40.cgf
-private let triangleImageSize = 18.cgf
+private let triangleImageSize = 20.cgf
